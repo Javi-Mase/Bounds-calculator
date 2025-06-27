@@ -13,9 +13,6 @@ def cotaJohnsonRestringida(n, d, w, q) -> int:
     return math.floor(num / den)
 
 
-# ----------------------------------------------------------------------
-# 2) Cálculo inverso: d máximo para un M dado
-# ----------------------------------------------------------------------
 def cotaJohnsonRestringidaInversa(n, M, w, q) -> int:
     lo, hi = 0, n
     while lo < hi:
@@ -28,9 +25,6 @@ def cotaJohnsonRestringidaInversa(n, M, w, q) -> int:
     return lo
 
 
-# ----------------------------------------------------------------------
-# 3) Verificación de un código concreto
-# ----------------------------------------------------------------------
 def cotaJohnsonRestringidaCheck(n, d, w, q, M) -> tuple[bool, int | None]:
     M_max = cotaJohnsonRestringida(n, d, w, q)
     if M_max is None:
